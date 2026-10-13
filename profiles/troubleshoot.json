@@ -1,0 +1,10 @@
+{
+  "agent": "troubleshooter",
+  "model": "Myki-Nexus",
+  "effortLevel": "xhigh",
+  "env": {
+    "CLAUDE_SESSION_MODE": "troubleshoot",
+    "CLAUDE_CODE_MAX_CONTEXT_TOKENS": "1000000",
+    "CLAUDE_CODE_DISABLE_TERMINAL_TITLE": "1"
+  }
+}

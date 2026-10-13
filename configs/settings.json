@@ -1,0 +1,94 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "mk-14",
+    "ANTHROPIC_BASE_URL": "http://192.168.1.18:8317"
+  },
+  "attribution": {
+    "commit": "",
+    "pr": "",
+    "sessionUrl": false
+  },
+  "permissions": {
+    "deny": [
+      "Bash(*.ssh*)",
+      "Bash(*id_rsa*)",
+      "Bash(*id_ed25519*)",
+      "Bash(*id_ecdsa*)",
+      "Bash(*id_dsa*)",
+      "Bash(*.pem*)",
+      "Bash(*.key*)",
+      "Bash(*.p12*)",
+      "Bash(*.pfx*)",
+      "Bash(*api*key*)",
+      "Bash(*api_key*)",
+      "Bash(*apikey*)",
+      "Bash(*secret*)",
+      "Bash(*credential*)",
+      "Bash(*token*)",
+      "Bash(*.env*)",
+      "Bash(*credentials.json*)",
+      "Bash(*service-account*)",
+      "Bash(*keyfile*)",
+      "Bash(*.aws/credentials*)",
+      "Bash(*.aws/config*)",
+      "Bash(*.config/gcloud*)",
+      "Bash(*.azure*)",
+      "Bash(*.kube/config*)",
+      "Bash(*.docker/config*)",
+      "Bash(*.gnupg*)",
+      "Bash(*.password-store*)",
+      "Bash(*.netrc*)",
+      "Bash(*.pgpass*)",
+      "Bash(*.my.cnf*)",
+      "Bash(*wallet.dat*)",
+      "Bash(*.keystore*)",
+      "Bash(*.jks*)",
+      "Bash(ssh-keygen*)",
+      "Bash(ssh-add*)",
+      "Bash(ANTHROPIC_API_KEY*)",
+      "Bash(OPENAI_API_KEY*)",
+      "Bash(*sk-*)",
+      "Bash(*sk_live*)",
+      "Bash(*sk_test*)",
+      "Read(*.ssh/*)",
+      "Read(*id_rsa*)",
+      "Read(*id_ed25519*)",
+      "Read(*id_ecdsa*)",
+      "Read(*id_dsa*)",
+      "Read(*.pem)",
+      "Read(*.key)",
+      "Read(*.p12)",
+      "Read(*.pfx)",
+      "Read(*.env)",
+      "Read(*.env.*)",
+      "Read(*credentials.json)",
+      "Read(*service-account*.json)",
+      "Read(*keyfile.json)",
+      "Read(*.aws/credentials)",
+      "Read(*.aws/config)",
+      "Read(*.kube/config)",
+      "Read(*.docker/config.json)",
+      "Read(*.gnupg/*)",
+      "Read(*.netrc)",
+      "Read(*.pgpass)",
+      "Read(*wallet.dat)",
+      "Read(*.keystore)",
+      "Read(*.jks)"
+    ]
+  },
+  "tui": "fullscreen",
+  "cleanupPeriodDays": 36500,
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/log-commands.py"
+          }
+        ]
+      }
+    ]
+  }
+}
