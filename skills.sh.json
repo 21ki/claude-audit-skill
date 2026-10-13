@@ -1,0 +1,13 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "DevOps & Security",
+      "description": "Enterprise audit logging and troubleshooting suite for Claude Code.",
+      "skills": [
+        "claude-audit-skill"
+      ]
+    }
+  ]
+}
