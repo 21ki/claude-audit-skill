@@ -1,0 +1,31 @@
+{
+  "name": "claude-audit-skill",
+  "version": "1.0.0",
+  "description": "Claude Code Command Audit Logger with Auto-Redaction & 1GB Persistent Archiving",
+  "main": "bin/install.js",
+  "bin": {
+    "claude-audit-skill": "./bin/install.js"
+  },
+  "scripts": {
+    "install-hook": "node ./bin/install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/21ki/claude-audit-skill.git"
+  },
+  "keywords": [
+    "claude-code",
+    "agent-skills",
+    "skills",
+    "audit",
+    "security",
+    "hooks",
+    "redaction"
+  ],
+  "author": "21ki <21kixc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/21ki/claude-audit-skill/issues"
+  },
+  "homepage": "https://github.com/21ki/claude-audit-skill#readme"
+}
